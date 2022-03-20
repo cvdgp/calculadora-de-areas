@@ -39,28 +39,30 @@
                     <input type="text" name="base" id="base">
                     <label for="altura">ALTURA</label>
                     <input type="text" name="altura" id="altura">
-
+                    <label for="r" class="no_veo" id="lRadio">RÁDIO</label>
+                    <input type="number" name="r" id="r" class="no_veo">
                 </div>
                 <div class="form-footer">
-                    <input  class="btn"  type="button" value="calc">
+                    <input  class="btn"  type="button" value="calc" id="clac">
                     <input  class="btn btn-2"  type="submit" value="limpia">
 
                 </div>
             </form>
 
             <figure class="geometrico">
+                <div id="cargaAreas"></div>
                 <div class="circle no_veo" id="circle">
                     <svg width="150" height="150" id="img-circle">
-                        <text x="10" y="10" style="fill:red;">base </text>
-                        <text x="10" y="25" style="fill:red;">altura </text>
+                        <text x="10" y="25" style="fill:aquamarine;" id="circle-txt"> </text>
                         <circle cx="75" cy="75" r="50" fill="whitesmoke" stroke="red"/>
 
                     </svg>
                 </div>
 
                 <div class="square  no_veo" id="square">
-
+                    
                     <svg width ="150" height="150" id="img-square" >
+                        <text x="10" y="25" style="fill:aquamarine;" id="square-txt"> </text>
                         <rect  x="25" y="50" 
                                 fill="whitesmoke" 
                                 stroke="red"  
@@ -70,7 +72,9 @@
                 </div>
 
                 <div class="triangle no_veo" id="triangle">
+                    
                     <svg class="triangle" width="150" height="150" id="img-triangle">
+                        <text x="10" y="25" style="fill:aquamarine;" id="triangle-txt"> </text>
                         <polygon fill="#fff" stroke="red" stroke-width="2px" 
                         points="5 120, 75 5, 150 120" />
                     </svg>
