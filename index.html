@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="autor" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>areas</title>
+    </head>
+    <body>
+        <header class="header">
+
+            <h1 class="header-titulo">Areas de ...</h1>
+            <img src="assets/css/imgs.svg">
+        </header>
+        <main>
+            <h2>Ejercicio de representación de areas</h2>
+
+            <ol>
+                <li>triangulo ==> b*h/2</li>
+                <li>Rectángulo ==> b * h </li>
+                <li>circulo ==> π  * r2</li>
+            </ol>
+            <form class="form" id="form">
+                <div class="form-main">
+
+                    <label for="figura">FIGURA</label>
+                    <input list="list_geometric">
+
+                    <datalist id="list_geometric">
+                        <option value="CIRCULO">
+                        <option value="RECTÁNGULO">
+                        <option value="TRIANGULO">
+                    </datalist>
+                    <label for="base">BASE</label>
+                    <input type="text" name="base" id="base">
+                    <label for="altura">ALTURA</label>
+                    <input type="text" name="altura" id="altura">
+
+                </div>
+                <div class="form-footer">
+                    <input  class="btn"  type="button" value="calc">
+                    <input  class="btn btn-2"  type="submit" value="limpia">
+
+                </div>
+            </form>
+
+            <figure class="geometrico">
+                <div class="circle no_veo" id="circle">
+                    <svg width="150" height="150" id="img-circle">
+                        <text x="10" y="10" style="fill:red;">base </text>
+                        <text x="10" y="25" style="fill:red;">altura </text>
+                        <circle cx="75" cy="75" r="50" fill="whitesmoke" stroke="red"/>
+
+                    </svg>
+                </div>
+
+                <div class="square  no_veo" id="square">
+
+                    <svg width ="150" height="150" id="img-square" >
+                        <rect  x="25" y="50" 
+                                fill="whitesmoke" 
+                                stroke="red"  
+                                width="100"
+                                 height="50">
+                    </svg>
+                </div>
+
+                <div class="triangle no_veo" id="triangle">
+                    <svg class="triangle" width="150" height="150" id="img-triangle">
+                        <polygon fill="#fff" stroke="red" stroke-width="2px" 
+                        points="5 120, 75 5, 150 120" />
+                    </svg>
+                </div>
+            </figure>
+        </main>
+        <footer>
+
+
+        </footer>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
