@@ -28,18 +28,20 @@
                 <div class="form-main">
 
                     <label for="figura">FIGURA</label>
-                    <input list="list_geometric">
+                    <input list="list_geometric" id="mi_figura">
 
                     <datalist id="list_geometric">
                         <option value="CIRCULO">
                         <option value="RECTÁNGULO">
                         <option value="TRIANGULO">
                     </datalist>
-                    <label for="base">BASE</label>
+                    <!-- ****base*** -->
+                    <label for="base" id="labelBase">BASE</label>
                     <input type="text" name="base" id="base">
-                    <label for="altura">ALTURA</label>
+                    <!-- *****altura**** -->
+                    <label for="altura" id="labelAltura">ALTURA</label>
                     <input type="text" name="altura" id="altura">
-                    <label for="r" class="no_veo" id="lRadio">RÁDIO</label>
+                    <label for="r" class="no_veo" id="Radio">RADIO</label>
                     <input type="number" name="r" id="r" class="no_veo">
                 </div>
                 <div class="form-footer">
@@ -53,7 +55,7 @@
                 <div id="cargaAreas"></div>
                 <div class="circle no_veo" id="circle">
                     <svg width="150" height="150" id="img-circle">
-                        <text x="10" y="25" style="fill:aquamarine;" id="circle-txt"> </text>
+                        <text x="15" y="15" style="fill:aqua;" id="circle-txt"> </text>
                         <circle cx="75" cy="75" r="50" fill="whitesmoke" stroke="red"/>
 
                     </svg>
@@ -62,24 +64,32 @@
                 <div class="square  no_veo" id="square">
                     
                     <svg width ="150" height="150" id="img-square" >
-                        <text x="10" y="25" style="fill:aquamarine;" id="square-txt"> </text>
+                        <text x="15" y="15" style=" fill:aqua;" id="square-txt"> </text>
                         <rect  x="25" y="50" 
-                                fill="whitesmoke" 
-                                stroke="red"  
-                                width="100"
-                                 height="50">
+                        fill="whitesmoke" 
+                        stroke="red"  
+                        width="100"
+                        height="50">
                     </svg>
                 </div>
 
                 <div class="triangle no_veo" id="triangle">
                     
                     <svg class="triangle" width="150" height="150" id="img-triangle">
-                        <text x="10" y="25" style="fill:aquamarine;" id="triangle-txt"> </text>
-                        <polygon fill="#fff" stroke="red" stroke-width="2px" 
-                        points="5 120, 75 5, 150 120" />
+                        <text 
+                        x="10" y="15" 
+                        style=" font:sans-serif 1.2em bolder; fill:aqua;" 
+                        id="triangle-txt"> </text>
+                        <polygon
+                         fill="#fff" 
+                         stroke="red" stroke-width="2px" 
+                        points="5 120, 75 20, 150 120" />
                     </svg>
                 </div>
             </figure>
+            <article>
+                <img src="" alt="" lazy="loading" srcset="">
+            </article>
         </main>
         <footer>
 
